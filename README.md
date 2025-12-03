@@ -22,9 +22,9 @@ SVC(kernel="linear")
 Clasifica entre good (0) y rust (1).
 
 El pipeline facilita la reproducibilidad y evita fugas de datos (data leakage).
+
 # Validación
 El proyecto soporta validación robusta mediante Stratified K-Fold, lo cual:
-
 - Mantiene el balance de clases en cada fold.
 - Permite usar todo el dataset para entrenamiento + validación.
 Da métricas más confiables en datasets relativamente pequeños.
@@ -35,7 +35,19 @@ Las métricas recomendadas:
 - Recall
 - F1-Score
 
+# Clasificación individual
+El códgio también cuenta con una función que:
+- Recibe el índice de una image
+- Extrae rasgos (HOG+LBP)
+- Predice si está oxidada o no
+- Muestra la imagen y la etiqueta predicha
 
-Clasifica entre good (0) y rust (1).
+# Tecnologías utilizadas
+- Python 3.x
+- OpenCV
+- Scikit-Learn
+- Scikit-Image
+- Matplotlib
+- Numpy
 
 El pipeline facilita la reproducibilidad y evita fugas de datos (data leakage).
