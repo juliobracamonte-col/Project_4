@@ -49,5 +49,3 @@ El códgio también cuenta con una función que:
 - Scikit-Image
 - Matplotlib
 - Numpy
-
-El pipeline facilita la reproducibilidad y evita fugas de datos (data leakage).
